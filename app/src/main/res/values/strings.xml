@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">QuickMaths</string>
+    <string name="PlayButton">Jouer</string>
+    <string name="ScoreButton">Score</string>
+    <string name="QuitButton">Quitter</string>
+    <string name="DescAccueil">Exercez-vous au calcul mental</string>
 </resources>
