@@ -5,6 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D9D9D9"
+    android:backgroundTint="#D9D9D9"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -18,7 +20,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="1003dp"
+            android:layout_height="990dp"
             android:layout_weight="1"
             android:orientation="vertical">
 
@@ -31,12 +33,12 @@
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="200dp"
+                    android:layout_marginBottom="150dp"
                     android:layout_weight="0"
                     android:text="@string/app_name"
                     android:textAllCaps="false"
                     android:textColor="#5E8BFF"
-                    android:textSize="60sp"
+                    android:textSize="70sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -47,23 +49,24 @@
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="50dp"
+                    android:layout_marginBottom="20dp"
                     android:layout_weight="0"
                     android:text="@string/DescAccueil"
                     android:textAlignment="center"
-                    android:textSize="34sp"
+                    android:textSize="40sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView"
+                    app:layout_constraintVertical_bias="0.050000012" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="957dp"
             android:layout_weight="1">
 
             <LinearLayout
@@ -75,35 +78,38 @@
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="446dp">
+                app:layout_constraintTop_toTopOf="parent">
 
                 <Button
-                    android:id="@+id/button"
+                    android:id="@+id/playButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginVertical="30px"
                     android:layout_weight="1"
                     android:backgroundTint="#5E8BFF"
                     android:text="@string/PlayButton"
                     android:textColorLink="#00FFFFFF"
-                    android:textSize="24sp" />
+                    android:textSize="36sp" />
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/scoreButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginVertical="30px"
                     android:layout_weight="1"
                     android:backgroundTint="#5E8BFF"
                     android:text="@string/ScoreButton"
-                    android:textSize="24sp" />
+                    android:textSize="36sp" />
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/quitButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginVertical="30px"
                     android:layout_weight="1"
                     android:backgroundTint="#5E8BFF"
                     android:text="@string/QuitButton"
-                    android:textSize="24sp" />
+                    android:textSize="36sp" />
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -111,22 +117,57 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#5E8BFF"
-                    android:text="i"
-                    android:textAllCaps="false"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/infoButton"
+                        android:layout_width="52dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:backgroundTint="#5E8BFF"
+                        android:text="i"
+                        android:textAllCaps="false"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textVersion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="V1.0-1"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
 
         </LinearLayout>
     </LinearLayout>
