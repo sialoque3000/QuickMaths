@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
-    tools:context=".MainActivity">
+    android:background="#D9D9D9"
+    tools:context=".activity_info">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,7 +36,7 @@
                     android:layout_weight="0"
                     android:text="@string/app_name"
                     android:textAllCaps="false"
-                    android:textColor="@color/blue"
+                    android:textColor="#5E8BFF"
                     android:textSize="70sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -80,73 +80,16 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <Button
-                    android:id="@+id/playButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="30px"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/blue"
-                    android:text="@string/PlayButton"
-                    android:textColorLink="#00FFFFFF"
-                    android:textSize="36sp" />
-
-                <Button
-                    android:id="@+id/scoreButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginVertical="30px"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/blue"
-                    android:text="@string/ScoreButton"
-                    android:textSize="36sp" />
-
-                <Button
                     android:id="@+id/quitButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="30px"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/blue"
+                    android:backgroundTint="#5E8BFF"
                     android:text="@string/QuitButton"
                     android:textSize="36sp" />
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageButton
-                    android:id="@+id/imageButton2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/twitter"
-                    tools:layout_editor_absoluteY="42dp" />
-
-                <ImageButton
-                    android:id="@+id/imageButton3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/instagram"
-                    tools:layout_editor_absoluteX="251dp"
-                    tools:layout_editor_absoluteY="76dp" />
-
-                <ImageButton
-                    android:id="@+id/imageButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/discord"
-                    tools:layout_editor_absoluteX="134dp"
-                    tools:layout_editor_absoluteY="145dp" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -162,21 +105,7 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <Button
-                        android:id="@+id/infoButton"
-                        android:layout_width="52dp"
-                        android:layout_height="60dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginBottom="8dp"
-                        android:backgroundTint="@color/blue"
-                        android:text="@string/InfoButton"
-                        android:textAllCaps="false"
-                        android:textSize="24sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                    android:layout_height="match_parent"/>
 
             </LinearLayout>
 
@@ -196,7 +125,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="8dp"
                         android:layout_marginBottom="8dp"
-                        android:text="@string/Version"
+                        android:text="V1.0-1"
                         android:textSize="24sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent" />
