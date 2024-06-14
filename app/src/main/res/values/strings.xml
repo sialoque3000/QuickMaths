@@ -4,9 +4,12 @@
     <string name="ScoreButton">Score</string>
     <string name="QuitButton">Quitter</string>
     <string name="ReturnButton">Retour</string>
+    <string name="ValidationButton">Valider</string>
     <string name="Informations">Informations</string>
+    <string name="Classement">Classement</string>
     <string name="InfoButton" translatable="false">i</string>
     <string name="Version" translatable="false">V1.0-1</string>
     <string name="DescInfo">QuickMaths a été réalisé dans le cadre d’un devoir étudiant à l’IUT d’Amiens par Bastien Durand et Maxime Boulenger, en deuxième année de BUT Informatique.C’est un simple jeu de calcul mental.</string>
     <string name="DescAccueil">Exercez-vous au calcul mental</string>
+    <string name="DescJeu">Résout le plus de calcul possible</string>
 </resources>
