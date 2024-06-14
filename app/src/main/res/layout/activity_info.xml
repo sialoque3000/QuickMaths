@@ -17,55 +17,76 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="264dp"
+            android:layout_weight="0">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="@string/app_name"
+                android:textAllCaps="false"
+                android:textColor="#5E8BFF"
+                android:textSize="70sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="@string/Informations"
+                android:textAlignment="center"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.050000012" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="990dp"
+            android:layout_height="660dp"
             android:layout_weight="1"
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="420dp"
-                android:layout_weight="0">
+                android:layout_height="75dp"
+                android:layout_weight="1">
 
                 <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="150dp"
-                    android:layout_weight="0"
-                    android:text="@string/app_name"
-                    android:textAllCaps="false"
-                    android:textColor="#5E8BFF"
-                    android:textSize="70sp"
-                    android:textStyle="bold"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginEnd="27dp"
+                    android:layout_weight="1"
+                    android:includeFontPadding="true"
+                    android:text="@string/DescInfo"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
-                    android:layout_weight="0"
-                    android:text="@string/DescAccueil"
-                    android:textAlignment="center"
-                    android:textSize="40sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView"
-                    app:layout_constraintVertical_bias="0.050000012" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="925dp"
+            android:layout_height="363dp"
             android:layout_weight="1">
 
             <LinearLayout
@@ -82,18 +103,19 @@
                 <Button
                     android:id="@+id/quitButton"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="387dp"
                     android:layout_marginVertical="30px"
                     android:layout_weight="1"
                     android:backgroundTint="#5E8BFF"
                     android:text="@string/QuitButton"
                     android:textSize="36sp" />
             </LinearLayout>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="751dp"
+            android:layout_height="374dp"
             android:layout_weight="1"
             android:orientation="horizontal">
 
@@ -105,7 +127,21 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/infoButton"
+                        android:layout_width="52dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:backgroundTint="@color/blue"
+                        android:text="@string/InfoButton"
+                        android:textAllCaps="false"
+                        android:textSize="24sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
             </LinearLayout>
 
@@ -125,7 +161,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="8dp"
                         android:layout_marginBottom="8dp"
-                        android:text="V1.0-1"
+                        android:text="@string/Version"
                         android:textSize="24sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent" />
@@ -134,6 +170,7 @@
             </LinearLayout>
 
         </LinearLayout>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

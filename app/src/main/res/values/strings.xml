@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">QuickMaths</string>
+    <string name="app_name" translatable="false">QuickMaths</string>
     <string name="PlayButton">Jouer</string>
     <string name="ScoreButton">Score</string>
     <string name="QuitButton">Quitter</string>
     <string name="ReturnButton">Retour</string>
     <string name="Informations">Informations</string>
-    <string name="InfoButton">i</string>
-    <string name="Version">V1.0-1</string>
+    <string name="InfoButton" translatable="false">i</string>
+    <string name="Version" translatable="false">V1.0-1</string>
     <string name="DescInfo">QuickMaths a été réalisé dans le cadre d’un devoir étudiant à l’IUT d’Amiens par Bastien Durand et Maxime Boulenger, en deuxième année de BUT Informatique.C’est un simple jeu de calcul mental.</string>
     <string name="DescAccueil">Exercez-vous au calcul mental</string>
 </resources>

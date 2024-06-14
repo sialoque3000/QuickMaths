@@ -25,7 +25,7 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="420dp"
+                android:layout_height="382dp"
                 android:layout_weight="0">
 
                 <TextView
@@ -65,7 +65,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="925dp"
+            android:layout_height="946dp"
             android:layout_weight="1">
 
             <LinearLayout
@@ -126,24 +126,37 @@
                     android:id="@+id/imageButton2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/twitter"
-                    tools:layout_editor_absoluteY="42dp" />
+                    android:scaleX="1.7"
+                    android:scaleY="1.7"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageButton"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/twitter" />
 
                 <ImageButton
                     android:id="@+id/imageButton3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/instagram"
-                    tools:layout_editor_absoluteX="251dp"
-                    tools:layout_editor_absoluteY="76dp" />
+                    android:scaleX="1.7"
+                    android:scaleY="1.7"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageButton"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/instagram" />
 
                 <ImageButton
                     android:id="@+id/imageButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/discord"
-                    tools:layout_editor_absoluteX="134dp"
-                    tools:layout_editor_absoluteY="145dp" />
+                    android:scaleX="1.7"
+                    android:scaleY="1.7"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageButton3"
+                    app:layout_constraintStart_toEndOf="@+id/imageButton2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/discord" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
