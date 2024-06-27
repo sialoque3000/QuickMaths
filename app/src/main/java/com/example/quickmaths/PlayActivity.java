@@ -21,7 +21,7 @@ public class PlayActivity extends AppCompatActivity {
     private int resultat;
     private TypeOperation typeOperation;
     private Random random = new Random(System.currentTimeMillis());
-    private TextView TxtInput;
+    //private TextView TxtInput;
     private Button btnValidate;
 
     @Override
@@ -36,7 +36,7 @@ public class PlayActivity extends AppCompatActivity {
             return insets;
         });
 
-        TxtInput = findViewById(R.id.TxtInput);
+        /*TxtInput = findViewById(R.id.TxtInput);
         btnValidate = findViewById(R.id.validButton);
 
         premierTerme = random.nextInt(MAX_BOUNDS);
@@ -44,7 +44,7 @@ public class PlayActivity extends AppCompatActivity {
         typeOperation = typeOperation.setValue(random.nextInt(4));
         RetourResultat();
 
-        btnValidate.setOnClickListener(view -> {
+        /*btnValidate.setOnClickListener(view -> {
             if (Comparaison()) {
 
             }
@@ -71,5 +71,6 @@ public class PlayActivity extends AppCompatActivity {
     private boolean Comparaison() {
         int input = Integer.parseInt(TxtInput.getText().toString());
         return input == resultat;
+    }*/
     }
 }

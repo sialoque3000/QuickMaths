@@ -13,6 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class activity_info extends AppCompatActivity {
 
     private Button btnBack;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +30,8 @@ public class activity_info extends AppCompatActivity {
         btnBack = findViewById(R.id.backButton);
 
         btnBack.setOnClickListener(view -> {
-            Intent intent = new Intent(this,MainActivity.class);
+            Intent intent = new Intent(this, MainActivity.class);
+            finish();
         });
     }
 }
