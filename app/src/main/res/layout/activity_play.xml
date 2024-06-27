@@ -18,68 +18,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@color/blue"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/image1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="60dp"
-                    android:src="@drawable/red_heart"
-                    android:translationX="-15dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageView
-                    android:id="@+id/image2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="60dp"
-                    android:src="@drawable/red_heart"
-                    android:translationX="-15dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/image1"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageView
-                    android:id="@+id/image3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="60dp"
-                    android:src="@drawable/red_heart"
-                    android:translationX="-15dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/image2"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/rightText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:text="17 pt"
-                    android:textColor="@android:color/white"
-                    android:textSize="34sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.appcompat.widget.Toolbar>
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:layout_weight="0">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/textMsg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
@@ -125,7 +70,7 @@
                         android:layout_height="match_parent">
 
                         <TextView
-                            android:id="@+id/textView4"
+                            android:id="@+id/TxtCalcul"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="23 + 89"
@@ -147,7 +92,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="100dp"
                     android:hint="Résultat..."
+                    android:inputType="number|numberSigned"
                     android:singleLine="true"
+                    android:textAlignment="center"
                     android:textSize="48sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"

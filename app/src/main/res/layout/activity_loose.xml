@@ -37,7 +37,7 @@
                     android:textColor="#5E8BFF"
                     android:textSize="65sp"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/textView2"
+                    app:layout_constraintBottom_toTopOf="@+id/textMsg"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
@@ -45,7 +45,7 @@
                     app:layout_constraintVertical_chainStyle="packed" />
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/textMsg"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0"
@@ -71,7 +71,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="75dp"
-                    android:layout_weight="1" >
+                    android:layout_weight="1">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/NameInput"
@@ -136,10 +136,4 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="20dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

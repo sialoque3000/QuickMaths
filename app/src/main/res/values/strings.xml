@@ -13,6 +13,6 @@
     <string name="DescAccueil">Exercez-vous au calcul mental</string>
     <string name="DescJeu">Résout le plus de calcul possible</string>
     <string name="InputText">Résultat...</string>
-    <string name="Loose">Vous avez atteint un score de 18 points !</string>
+    <string name="Loose">Vous avez atteint un score de %SCORE% points !</string>
     <string name="BackHomeButton">Accueil</string>
 </resources>

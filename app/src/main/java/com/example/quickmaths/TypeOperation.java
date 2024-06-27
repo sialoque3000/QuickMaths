@@ -3,8 +3,7 @@ package com.example.quickmaths;
 public enum TypeOperation {
     ADD("+"),
     SUBSTRACT("-"),
-    MULTIPLY("*"),
-    DIVIDE("/");
+    MULTIPLY("*");
     private String symbole;
 
     TypeOperation(String s) {
@@ -21,8 +20,6 @@ public enum TypeOperation {
                 return TypeOperation.SUBSTRACT;
             case 3:
                 return TypeOperation.MULTIPLY;
-            case 4:
-                return TypeOperation.DIVIDE;
             default:
                 return TypeOperation.ADD;
         }
