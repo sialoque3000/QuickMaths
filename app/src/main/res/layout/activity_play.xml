@@ -91,7 +91,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="100dp"
-                    android:hint="Résultat..."
+                    android:hint="@string/YourResult"
                     android:inputType="number|numberSigned"
                     android:singleLine="true"
                     android:textAlignment="center"

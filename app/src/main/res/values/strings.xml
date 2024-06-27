@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name" translatable="false">QuickMaths</string>
     <string name="PlayButton">Jouer</string>
-    <string name="ScoreButton">Score</string>
+    <string name="ScoreButton" translatable="false">Score</string>
     <string name="QuitButton">Quitter</string>
     <string name="ReturnButton">Retour</string>
     <string name="ValidationButton">Valider</string>
@@ -15,4 +15,6 @@
     <string name="InputText">Résultat...</string>
     <string name="Loose">Vous avez atteint un score de %SCORE% points !</string>
     <string name="BackHomeButton">Accueil</string>
+    <string name="YourName">Votre Nom...</string>
+    <string name="YourResult">Résultat...</string>
 </resources>

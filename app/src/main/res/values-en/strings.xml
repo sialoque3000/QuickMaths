@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="PlayButton">Play</string>
+    <string name="QuitButton">Quit</string>
+    <string name="ReturnButton">Back</string>
+    <string name="ValidationButton">Next</string>
+    <string name="Informations">Information</string>
+    <string name="Classement">Leaderboard</string>
+    <string name="DescInfo">QuickMaths was created as part of a student assignment at the IUT of Amiens by Bastien Durand and Maxime Boulenger, in the second year of BUT Informatique. It is a simple mental calculation game.</string>
+    <string name="DescAccueil">Practice mental arithmetic</string>
+    <string name="DescJeu">Solve as many calculations as possible</string>
+    <string name="InputText">Result...</string>
+    <string name="Loose">You have reached a score of %SCORE% points !</string>
+    <string name="BackHomeButton">Home</string>
+    <string name="YourName">Your Name...</string>
+    <string name="YourResult">Result...</string>
+</resources>
